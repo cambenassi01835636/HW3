@@ -1,0 +1,38 @@
+<!--
+    File: index.html
+    GUI Assignment: JS Dynamic Multiplication Table
+    Cameron Benassi, UMass Lowell Computer Science, cameron_benassi@student.uml.edu 
+    Copyright (c) 2021 by Cameron.  All rights reserved.  May be freely copied or excerpted 
+    for educational purposes with credit to the author. updated by CB on October 26, 2021
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        
+        <title>Multiplication Table Generator - v1</title>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h3>Multiplication Table Generator - v1</h3>
+            <form name="numbers">
+                1st Number Low End: <input id="1stLow" type="number"/> 
+                1st Number High End: <input id="1stHigh" type="number"/> 
+                2nd Number Low End: <input id="2ndLow" type="number"/> 
+                2nd Number High End: <input id="2ndHigh" type="number"/><br>
+                <button type="button" onclick="generate(); return false;">Calculate</button>
+            </form>
+            <br><br>
+            <table id="results">
+                <tHead></tHead>
+                <tBody></tBody>
+            </table>
+        </div>
+
+        <script type="text/javascript" src="js/script-main.js"></script>
+    </body>
+</html>
